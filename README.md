@@ -1,4 +1,4 @@
-<img src="https://github.com/Eyeless-With-Glasses/NickQuill/blob/main/public/prev/preview.png?raw=true" width="1500" alt="Laravel Logo">
+<img src="https://github.com/Eyeless-With-Glasses/NickQuill/blob/main/public/images/preview.png?raw=true" width="1500" alt="Generate Logo">
 
 Меня зовут Олег, это мой первый проект. Написал я его на PHP 8.1,
 blade.php и Framework Laravel 10 version. 
