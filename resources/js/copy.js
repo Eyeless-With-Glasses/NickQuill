@@ -13,8 +13,3 @@ clipboard.on('error', function (e) {
 
 // Находим ссылку по ID
 const myLink = document.getElementById('copyButton');
-
-// Добавляем обработчик события click
-
-
-
