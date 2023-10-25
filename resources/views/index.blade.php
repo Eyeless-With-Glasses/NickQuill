@@ -28,10 +28,10 @@
             <div class="your_nick">
                 <div class="your_nick__ready" id="copyText">{{$nickname}}
                     <a href="" class="icon">
-                        <svg class="svg" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        <svg class="svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
                              xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <rect width="10" height="10" fill="url(#pattern0)"/>
+                            <rect width="14" height="14" fill="url(#pattern0)"/>
                             <defs>
                                 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
                                     <use xlink:href="#image0_3_2" transform="scale(0.0104167)"/>

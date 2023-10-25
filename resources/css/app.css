@@ -163,6 +163,7 @@ a, u {
 
 .gender-label {
     margin-right: 5px;
+    margin-left: 5px;
 }
 
 .your_nick__ready {
@@ -183,7 +184,7 @@ a, u {
     position: absolute;
     display: flex;
     left: 70%;
-    top: 42%;
+    top: 38%;
     color: #FFF;
     text-align: center;
     font-family: Montserrat;
