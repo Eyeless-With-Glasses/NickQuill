@@ -19,7 +19,6 @@ class NickController extends Controller
         $nickname = $service->store($lang, $sex, $gptOrGen);
         return view('index', compact('nickname', 'sex', 'lang', 'gptOrGen'));
     }
-
     public function copy(string $nickname): \Illuminate\Http\RedirectResponse
     {
 
