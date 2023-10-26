@@ -11,7 +11,7 @@ class GenerateService
     private array $vowels;
     private array $vowelsWoman;
 
-    public function run(string $lang, string $sex): string
+    public function languageSelection(string $lang, string $sex): string
     {
         if ($lang === 'ru') {
             $this->dictionaryRu();

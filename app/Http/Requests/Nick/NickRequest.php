@@ -22,9 +22,9 @@ class NickRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'sex' => 'string',
-            'lang' => 'string',
-            'gpt_or_gen' => 'string',
+            'sex' => ['string'],
+            'lang' => ['string'],
+            'gpt_or_gen' => ['string'],
         ];
     }
 }

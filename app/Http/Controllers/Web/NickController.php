@@ -9,23 +9,17 @@ use App\Services\Nick\NickService;
 
 class NickController extends Controller
 {
-
-
     public function index(NickRequest $request, NickService $service)
     {
-        $lang = $request['lang'] ? 'ru' : 'en';
-        $sex = $request['sex'] ? 'male' : 'female';
-        $gptOrGen = $request['gpt_or_gen'] ? 'gpt' : 'gen';
+        $lang = $request->input('lang') ? 'ru' : 'en';
+        $sex = $request->input('sex') ? 'male' : 'female';
+        $gptOrGen = $request->input('gpt_or_gen') ? 'gpt' : 'gen';
         $nickname = $service->store($lang, $sex, $gptOrGen);
         return view('index', compact('nickname', 'sex', 'lang', 'gptOrGen'));
     }
-    public function copy(string $nickname): \Illuminate\Http\RedirectResponse
+    public function copy(string $nickname, NickService $service): \Illuminate\Http\RedirectResponse
     {
-
-        CopiedNickname::create([
-            'value' => $nickname
-        ]);
+        $copy = $service->copy($nickname);
         return redirect()->route('nick.index');
     }
-
 }
